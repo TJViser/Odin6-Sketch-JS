@@ -42,4 +42,4 @@ gem 'slim'     # add slim support
 gem 'slim-rails'     #replace the .erb with .slim
 gem 'bootstrap-sass'     # add bootstrap to rails
 gem 'autoprefixer-rails'     #adds browsers prefixes to css
-gem 'font-awesome-sass' # only if you need more icons
+gem 'font-awesome-rails' # only if you need more icons
