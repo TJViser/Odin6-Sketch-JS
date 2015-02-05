@@ -4,16 +4,19 @@
       p GRID
 
     .left_menu_content
-      //left menu buttons
-      button type="button"
+      // left menu buttons
+      // data will be used by jQuery
+      button type="button" data-size="16"
         | 16 x 16
         span class="fa fa-circle-o"
       p class="fa fa-th" set small grid
-      button type="button"
+
+      button type="button" data-size="32"
         | 32 x 32
         span class="fa fa-circle-o"
       p class="fa fa-th" set medium grid
-      button type="button"
+
+      button type="button" data-size="64"
         | 64 x 64
         span class="fa fa-circle-o"
       p class="fa fa-th" set large grid
