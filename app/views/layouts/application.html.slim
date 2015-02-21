@@ -9,11 +9,19 @@ html
 
 
   body
-
-    nav class="navbar navbar-fixed-bottom"
+    // main bottom menu
+    // show_nav is needed for hiding navigation on scroll
+    nav class="navbar navbar-fixed-bottom show_nav" id="main_navbar"
       .wrap_bottom_menu
         .container
           = render "menus/bottom_menu"
+    // show menu when hidden
+    nav class="navbar navbar-fixed-bottom" id="show_menu_button"
+      .container
+        .row
+          .col-xs-12
+            .button_show.pull-right
+              p SHOW MENU
 
     .container-fluid
       .row
