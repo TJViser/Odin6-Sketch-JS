@@ -24,8 +24,3 @@ $(document).on 'page:change', ->
   $(".wrap_left_menu").on "click", ".left_menu_content > button", ->
     $(".left_menu_content > button").removeClass("clicked_menu_button")
     $(this).addClass("clicked_menu_button")
-
-
-
-
-  $(window).resize ->

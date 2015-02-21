@@ -10,7 +10,10 @@ $(document).on 'page:change', ->
     # getting data size from html (16, 32 64)
     squares_per_line = $(this).data('size')
     container_width = $(".yield_content").innerWidth()
+    # -0.1px to avoid overflow
     squares_width = ((container_width - (squares_per_line*2))/squares_per_line) | 0
+    # centering the squares inside the content_yield
+    yield_padding = (container_width - (squares_per_line * (squares_width+2)))/2 | 0
     counter1 = 0
     while counter1 < squares_per_line
       $(".yield_content").append("<div class='generate_row'></div>")
@@ -22,6 +25,7 @@ $(document).on 'page:change', ->
 
     $(".generate_square").height(squares_width)
     $(".generate_square").width(squares_width)
+    $(".yield_content").css("padding" , yield_padding)
 
   # render effects
   $(".wrap_left_menu").on "click", ".left_menu_effects button", ->
