@@ -32,7 +32,7 @@ $(document).on 'page:change', ->
     if ($(this).scrollTop() == 0) || ($(this).scrollTop() == $(document).height() - $(window).height() )
       showMainMenu()
 
-    # else hide menu
+    # else hide menu.
     else if $("#main_navbar").hasClass "show_nav"
       $("#main_navbar").removeClass("show_nav").addClass("hide_nav")
       $("#show_menu_button").fadeIn(700)
